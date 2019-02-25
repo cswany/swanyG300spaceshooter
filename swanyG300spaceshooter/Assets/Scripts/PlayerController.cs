@@ -17,15 +17,29 @@ public class PlayerController : MonoBehaviour {
     Rigidbody rigidbody;
     public Boundary boundary;
 
+    public GameObject shot;
+    public Transform shotSpawn;
 
-	// Use this for initialization
+    public float fireRate;
+    private float nextFire;
+
 	void Start ()
 	{
         rigidbody = GetComponent<Rigidbody>();
 	}
 
-	// Update is called once per frame
-	void FixedUpdate ()
+
+    private void Update()
+    {
+        if (Input.GetButton("Fire1") && Time.time > nextFire)
+        {
+            nextFire = Time.time + fireRate;
+            Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+        }
+
+    }
+
+    void FixedUpdate ()
 	{
     	float moveHorizontal = Input.GetAxis ("Horizontal");
         float moveVertical = Input.GetAxis ("Vertical");
