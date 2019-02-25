@@ -71,8 +71,11 @@
     <Compile Include="Assets\_Complete-Game\Scripts\Done_PlayerController.cs" />
     <Compile Include="Assets\_Complete-Game\Scripts\Done_RandomRotator.cs" />
     <Compile Include="Assets\_Complete-Game\Scripts\Done_WeaponController.cs" />
+    <Compile Include="Assets\Scripts\DestroyByBoundary.cs" />
+    <Compile Include="Assets\Scripts\DestroyByContact.cs" />
     <Compile Include="Assets\Scripts\Mover.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\RandomRotator.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/cole/swanyG300spaceshooter/swanyG300spaceshooter/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
