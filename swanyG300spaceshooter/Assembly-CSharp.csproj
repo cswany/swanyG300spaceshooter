@@ -84,8 +84,10 @@
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\Mover.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\PlayerDestroyByContact.cs" />
     <Compile Include="Assets\Scripts\RandomRotator.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\WeaponController.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/cole/swanyG300spaceshooter/swanyG300spaceshooter/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

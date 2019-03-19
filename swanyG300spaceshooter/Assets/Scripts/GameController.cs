@@ -18,6 +18,7 @@ public class GameController : MonoBehaviour
     FMOD.Studio.ParameterInstance vroomvroomParam;
 
     public GameObject[] hazards;
+    public GameObject boss;
     public Vector3 spawnValues;
     public int hazardCount = 10;
     public float spawnWait = 0.75f;
@@ -36,6 +37,10 @@ public class GameController : MonoBehaviour
 
     private float timePlayed;
 
+    private bool boss1 = false;
+    private bool boss2 = false;
+    private bool boss3 = false;
+
     void Start()
     {
 
@@ -51,7 +56,7 @@ public class GameController : MonoBehaviour
         gameOver = false;
         restart = false;
         restartText.text = "";
-        gameOverText.text = "V334\nSPACE SHOOTER\n\nMove: W-A-S-D or arrows\nShoot: mouse or space";
+        gameOverText.text = "G300\nSPACE SHOOTER\n\nMove: W-A-S-D or arrows\nShoot: mouse click";
         score = 0;
         UpdateScore();
         StartCoroutine(SpawnWaves());
@@ -97,11 +102,7 @@ public class GameController : MonoBehaviour
 
             timeLimit -= Time.deltaTime;
         }
-        else
-        {
-            gameOverText.text = "";
-
-        }
+       
 
         timePlayed += Time.deltaTime;
 
@@ -161,20 +162,44 @@ public class GameController : MonoBehaviour
             pointsParam.setValue(2);
             hazardCount = 30;
             spawnWait = .5f;
-            CreateBoss();
+            if (boss1 == true)
+            { 
+                return; 
+            }
+            else
+            {
+                CreateBoss();
+                boss1 = true;
+            }
         }
         if (score >= 1000)
         {
             pointsParam.setValue(3);
             hazardCount = 100;
             spawnWait = 0.3f;
-            CreateBoss();
+            if (boss2 == true)
+            {
+                return;
+            }
+            else
+            {
+                CreateBoss();
+                boss1 = true;
+            }
         }
         if (score >= 1300)
         {
             hazardCount = 1000;
             spawnWait = 0.25f;
-            CreateBoss();
+            if (boss3 == true)
+            {
+                return;
+            }
+            else
+            {
+                CreateBoss();
+                boss1 = true;
+            }
         }
     }
 
@@ -186,6 +211,8 @@ public class GameController : MonoBehaviour
     }
     void CreateBoss()
     {
-        return;
+        Vector3 spawnPosition = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
+        Quaternion spawnRotation = Quaternion.identity;
+        Instantiate(boss, spawnPosition, spawnRotation);
     }
 }

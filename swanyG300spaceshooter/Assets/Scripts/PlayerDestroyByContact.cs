@@ -2,15 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DestroyByContact : MonoBehaviour 
+public class PlayerDestroyByContact : MonoBehaviour
 {
     [FMODUnity.EventRef]
     public string explosionFMOD = "event:/Explosion";
     FMOD.Studio.EventInstance explosionEv;
 
     private GameController gameController;
-
-    public int scoreValue;
 
     public GameObject explosion;
 
@@ -31,15 +29,11 @@ public class DestroyByContact : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Boundary" || other.tag == "Enemy")
-        {
-            return;
-        }
         Instantiate(explosion, transform.position, transform.rotation);
         Destroy(other.gameObject);
-        gameController.AddScore(scoreValue);
         Destroy(gameObject);
         explosionEv.start();
+        gameController.GameOver();
     }
 
 }
