@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{934885a3-0b40-44d2-98f5-96fc73152c12}">
+        <property name="assetPath">
+            <value>385810__mickeymephistopheles__slinky-pew-laser-sound.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>96</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>133.19019791666668</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{8084a67e-4577-46f6-8ae4-7195111bb27b}</destination>
+        </relationship>
+    </object>
+</objects>

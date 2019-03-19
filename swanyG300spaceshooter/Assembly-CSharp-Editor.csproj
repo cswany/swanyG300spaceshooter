@@ -61,6 +61,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Editor\FMODMigrationUtil.cs" />
+    <Compile Include="Assets\GoogleVR\Editor\FmodGvrAudioRoomEditor.cs" />
+    <Compile Include="Assets\ResonanceAudio\Editor\FmodResonanceAudioRoomEditor.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/cole/swanyG300spaceshooter/swanyG300spaceshooter/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
@@ -370,9 +373,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{8259042F-1015-DF63-4010-3A15B9947171}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{54323CC1-1D0E-8CFC-BB59-F72AADAFCC87}</Project>
       <Name>Assembly-CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="Assembly-CSharp-Editor-firstpass.csproj">
+      <Project>{55B8F417-7D00-F830-74F1-427A797EC154}</Project>
+      <Name>Assembly-CSharp-Editor-firstpass</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

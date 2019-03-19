@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{aff6d075-59d2-43e8-8d0c-57ae0963a9fe}">
+        <property name="name">
+            <value>flyfly</value>
+        </property>
+        <relationship name="folder">
+            <destination>{5057e276-cc41-4ce1-a2bb-28359e45dc49}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{856689d1-d1b4-463d-bd5b-cf6248f053e1}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{856689d1-d1b4-463d-bd5b-cf6248f053e1}">
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+        <property name="seekSpeed">
+            <value>1.2999999523162842</value>
+        </property>
+        <property name="seekSpeedDescending">
+            <value>5</value>
+        </property>
+    </object>
+</objects>

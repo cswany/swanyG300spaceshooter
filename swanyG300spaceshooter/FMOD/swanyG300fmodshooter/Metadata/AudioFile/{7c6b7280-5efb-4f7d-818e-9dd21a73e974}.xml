@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{7c6b7280-5efb-4f7d-818e-9dd21a73e974}">
+        <property name="assetPath">
+            <value>66212__ifartinurgeneraldirection__cutting-power-2.mp3</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>22.413061224489795</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{8084a67e-4577-46f6-8ae4-7195111bb27b}</destination>
+        </relationship>
+    </object>
+</objects>

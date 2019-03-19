@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{a4e0a742-0a62-4ee5-bbaa-adad3a018bf5}">
+        <property name="assetPath">
+            <value>163584__twisterman__silenced-gun-2.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>3.0185941043083901</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{8084a67e-4577-46f6-8ae4-7195111bb27b}</destination>
+        </relationship>
+    </object>
+</objects>
