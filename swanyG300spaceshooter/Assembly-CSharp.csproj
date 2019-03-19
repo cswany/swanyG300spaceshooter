@@ -73,13 +73,14 @@
     <Compile Include="Assets\_Complete-Game\Scripts\Done_WeaponController.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Audio\FmodGvrAudio.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Audio\FmodGvrAudioRoom.cs" />
-    <Compile Include="Assets\Prefabs\Boss_DestroyByContact.cs" />
-    <Compile Include="Assets\Prefabs\Boss_WeaponController.cs" />
     <Compile Include="Assets\ResonanceAudio\Scripts\FmodResonanceAudio.cs" />
     <Compile Include="Assets\ResonanceAudio\Scripts\FmodResonanceAudioRoom.cs" />
+    <Compile Include="Assets\Scripts\Boss_DestroyByContact.cs" />
+    <Compile Include="Assets\Scripts\Boss_WeaponController.cs" />
     <Compile Include="Assets\Scripts\DestroyByBoundary.cs" />
     <Compile Include="Assets\Scripts\DestroyByContact.cs" />
     <Compile Include="Assets\Scripts\DestroyByTime.cs" />
+    <Compile Include="Assets\Scripts\Evasive_Maneuver.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\Mover.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />

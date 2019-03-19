@@ -24,9 +24,7 @@ public class Boss_WeaponController : MonoBehaviour
     {
         Instantiate(shot, shotSpawn1.position, shotSpawn1.rotation);
         Instantiate(shot, shotSpawn2.position, shotSpawn2.rotation);
-        /* V334 */
         enemyEv.start();
-        // original shot fired audio call was here //
         Debug.Log("ENEMY fires");
     }
 }

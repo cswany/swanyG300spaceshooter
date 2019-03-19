@@ -12,6 +12,10 @@ public class Boundary
 
 public class PlayerController : MonoBehaviour {
 
+    [FMODUnity.EventRef]
+    public string pewpew = "event:/Shoot";
+    FMOD.Studio.EventInstance pewpewEv;
+
     public float speed;
     public float tilt;
     Rigidbody rigidbody;
@@ -35,6 +39,8 @@ public class PlayerController : MonoBehaviour {
         {
             nextFire = Time.time + fireRate;
             Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+            pewpewEv = FMODUnity.RuntimeManager.CreateInstance(pewpew);
+            pewpewEv.start();
         }
 
     }

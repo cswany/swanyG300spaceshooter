@@ -7,7 +7,7 @@ public class Boss_DestroyByContact : MonoBehaviour
     public GameObject playerExplosion;
     public GameObject bossExplosion;
     public int scoreValue;
-    private Done_GameController gameController;
+    private GameController gameController;
     public float health = 5;
 
     [FMODUnity.EventRef]
@@ -21,7 +21,7 @@ public class Boss_DestroyByContact : MonoBehaviour
         GameObject gameControllerObject = GameObject.FindGameObjectWithTag("GameController");
         if (gameControllerObject != null)
         {
-            gameController = gameControllerObject.GetComponent<Done_GameController>();
+            gameController = gameControllerObject.GetComponent<GameController>();
         }
         if (gameController == null)
         {
