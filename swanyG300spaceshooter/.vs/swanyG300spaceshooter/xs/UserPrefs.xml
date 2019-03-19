@@ -1,12 +1,13 @@
 ﻿<Properties StartupConfiguration="{54323CC1-1D0E-8CFC-BB59-F72AADAFCC87}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerDestroyByContact.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/SquadStrikeController.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="85" Column="1" />
-      <File FileName="Assets/Scripts/DestroyByContact.cs" Line="43" Column="1" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/DestroyByContact.cs" Line="14" Column="5" />
       <File FileName="Assets/Scripts/Boss_DestroyByContact.cs" Line="31" Column="5" />
-      <File FileName="Assets/Scripts/GameController.cs" Line="131" Column="14" />
+      <File FileName="Assets/Scripts/GameController.cs" Line="105" Column="8" />
       <File FileName="Assets/WeaponController.cs" Line="25" Column="25" />
-      <File FileName="Assets/Scripts/PlayerDestroyByContact.cs" Line="10" Column="5" />
+      <File FileName="Assets/Scripts/PlayerDestroyByContact.cs" Line="36" Column="32" />
+      <File FileName="Assets/SquadStrikeController.cs" Line="18" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,9 +17,8 @@
               <Node name="_Complete-Game" expanded="True">
                 <Node name="Scripts" expanded="True" />
               </Node>
-              <Node name="Scripts" expanded="True">
-                <Node name="PlayerDestroyByContact.cs" selected="True" />
-              </Node>
+              <Node name="Scripts" expanded="True" />
+              <Node name="SquadStrikeController.cs" selected="True" />
             </Node>
           </Node>
         </State>

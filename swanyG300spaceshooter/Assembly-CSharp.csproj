@@ -86,6 +86,7 @@
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerDestroyByContact.cs" />
     <Compile Include="Assets\Scripts\RandomRotator.cs" />
+    <Compile Include="Assets\SquadStrikeController.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\WeaponController.cs" />
     <Reference Include="UnityEditor.StandardEvents">
