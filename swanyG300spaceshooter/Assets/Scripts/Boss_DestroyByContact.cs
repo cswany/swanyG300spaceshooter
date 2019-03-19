@@ -51,6 +51,7 @@ public class Boss_DestroyByContact : MonoBehaviour
                 Destroy(other.gameObject);
             }
         }
+
         else
         {
             if (explosion != null)
